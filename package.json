@@ -41,7 +41,8 @@
     "prepublish:npm": "npm run build",
     "publish:npm": "npm publish --access public",
     "test": "",
-    "typedoc:build": "typedoc --tsconfig ./tsconfig.typedoc.json"
+    "typedoc:build": "typedoc --tsconfig ./tsconfig.typedoc.json",
+    "postinstall": "npm run build"
   },
   "husky": {
     "hooks": {
